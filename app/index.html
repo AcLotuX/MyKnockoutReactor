@@ -4,9 +4,35 @@
     <meta charset="UTF-8">
     <title>Knockot Example</title>
     
+    <link rel="stylesheet" href="libraries/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="libraries/bootstrap/dist/css/bootstrap-theme.css">
 </head>
 <body>
-    <h1>This is a example for Knockout-Reactor</h1>
+    <script type="text/javascript" src="libraries/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="libraries/knockout/knockout.js"></script>
+    <script type="text/javascript" src="libraries/knockout/knockout-validation.js"></script>
+    <script type="text/javascript" src="libraries/requirejs/require.js"></script>
+    <script type="text/javascript" src="libraries/amplifyjs/amplify.js"></script>
+    <script type="text/javascript" src="libraries/bootstrap/dist/js/bootstrap.js"></script>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Product</h1>
+                <div>
+                   <strong>ID:</strong>
+                   <span data-bind="text:product.id"></span><br>
+                   <strong>Name:</strong>
+                   <span data-bind="text:product.name"></span><br>
+                   <strong>Price:</strong>
+                   <span data-bind="text:product.price"></span><br>
+                   <strong>Stock:</strong>
+                   <span data-bind="text:product.stock"></span>
+                </div>
+            </div>
+        </div>
+    </div>
     
+    <!--  Scripts  -->
+    <script type="text/javascript" src="js/viewmodel.js"></script>
 </body>
 </html>
