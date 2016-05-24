@@ -1,0 +1,41 @@
+.menu{
+    height:60px;
+    display: block;
+    background-color: #444;
+}
+.menu>span{
+    display: inline-block;
+    margin-top: 6px;
+    font-weight: bold;
+    font-size: 35px;
+    color: #eee;
+    margin-left: 5px;
+}
+.container-border-1{
+    border: 1px solid;
+}
+
+.container-margin-1{
+    margin: 5px;
+}
+
+.container-padding-1{
+    padding: 0px 10px 10px 10px;
+}
+
+.container-left{
+    float: left;
+    width:15%;
+}
+.container-right{
+    float: right;
+    width:calc(85% - 20px);
+}
+
+.container-right .table th{
+    font-size: 18px;
+    font-weight: bold;
+}
+.container-right .table td{
+    font-size: 15px
+}
