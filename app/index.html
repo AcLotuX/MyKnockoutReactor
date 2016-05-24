@@ -20,6 +20,17 @@
                 <h1>Product</h1>
                 <div>
                    <strong>ID:</strong>
+                   <input type="text" class="form-control" data-bind="value:product.id"><br>
+                   <strong>Name:</strong>
+                   <input type="text" class="form-control" data-bind="value:product.name"><br>
+                   <strong>Price:</strong>
+                   <input type="text" class="form-control" data-bind="value:product.price"><br>
+                   <strong>Stock:</strong>
+                   <input type="text" class="form-control" data-bind="value:product.stock"></span>
+                </div>
+                <hr>
+                <div>
+                   <strong>ID:</strong>
                    <span data-bind="text:product.id"></span><br>
                    <strong>Name:</strong>
                    <span data-bind="text:product.name"></span><br>
@@ -31,7 +42,6 @@
             </div>
         </div>
     </div>
-    
     <!--  Scripts  -->
     <script type="text/javascript" src="js/models/product.js"></script>
     <script type="text/javascript" src="js/viewmodel.js"></script>
